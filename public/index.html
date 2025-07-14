@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 1.6 Server Browser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Counter-Strike 1.6 Server Browser</h1>
+            <div class="controls">
+                <button id="refreshBtn" class="refresh-btn">🔄 Refresh</button>
+                <label class="auto-refresh">
+                    <input type="checkbox" id="autoRefresh" checked>
+                    Auto-refresh (60s)
+                </label>
+            </div>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Total Servers</h3>
+                <p id="totalServers">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Players</h3>
+                <p id="totalPlayers">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Last Update</h3>
+                <p id="lastUpdate">Never</p>
+            </div>
+        </div>
+
+        <div class="server-list" id="serverList">
+            <div class="loading">Loading servers...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
